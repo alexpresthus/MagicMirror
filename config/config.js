@@ -95,7 +95,7 @@ let config = {
 			header: "Nyheter",
 			position: "bottom_bar",
 			config: {
-				apiKey: process.env.NEWS_API_KEY,
+				apiKey: "e677fa8e6078483cb483866233d6837f",
 				type: "horizontal",
 				choice: "headlines",
 				pageSize: 10,
