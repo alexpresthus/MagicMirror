@@ -79,8 +79,8 @@ let config = {
 			module: "MMM-Entur-tavle",
 			position: "top_right",
 			config: {
-				stopId: '58257',
-				stopType: 'StopPlace',
+				stopId: '11866',
+				stopType: 'Quay',
 				numResults: 5,
 				showHeader: true,
 				highlightRealtime: true,
