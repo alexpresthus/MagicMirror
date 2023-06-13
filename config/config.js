@@ -89,26 +89,6 @@ let config = {
 				showTransportMode: true
 			}
 		},
-		/** NEWS (NewsAPI - Aftenposten, VG, NRK) */
-		{
-			module: "MMM-NewsAPI",
-			header: "Nyheter",
-			position: "bottom_bar",
-			config: {
-				apiKey: "e677fa8e6078483cb483866233d6837f",
-				type: "horizontal",
-				choice: "headlines",
-				pageSize: 10,
-				sortBy: "publishedAt",
-				drawInterval: 1000 * 30,
-				templateFile: "template.html",
-				fetchInterval: 1000 * 60 * 60,
-				query: {
-					country: "no",
-					language: "no",
-				}
-			}
-		},
 	]
 };
 
