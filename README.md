@@ -51,3 +51,21 @@ To donate, please follow [this](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xcl
 <p style="text-align: center">
 	<a href="https://forum.magicmirror.builders/topic/728/magicmirror-is-voted-number-1-in-the-magpi-top-50"><img src="https://magicmirror.builders/img/magpi-best-watermark-custom.png" width="150" alt="MagPi Top 50"></a>
 </p>
+
+# RUN FORKED VERSION
+
+## Install
+
+```
+git clone https://github.com/alexpresthus/MagicMirror.git
+cd MagicMirror/ && npm i
+npm run install-mm
+cd modules/ && git clone https://github.com/YR/MMM-YrNow.git && git clone https://github.com/mumblebaj/MMM-NewsAPI.git && git clone https://github.com/Arve/MMM-Entur-tavle.git
+npm i
+```
+
+## Start
+
+```
+export NEWS_API_KEY=<apikey> && npm run start
+```
