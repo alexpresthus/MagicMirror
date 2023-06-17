@@ -89,6 +89,14 @@ let config = {
 				showTransportMode: true
 			}
 		},
+		/** REMOTE COMPLIMENTS FROM GOOGLE DRIVE */
+		{
+			module: "MMM-RemoteCompliments",
+			config: {
+				fadeSpeed: 1000,
+				
+			}
+		}
 	]
 };
 
