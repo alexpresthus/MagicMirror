@@ -49,21 +49,11 @@ let config = {
 			position: "top_left"
 		},
 		{
-			module: "calendar",
-			header: "US Holidays",
-			position: "top_left",
-			config: {
-				calendars: [
-					{
-						symbol: "calendar-check",
-						url: "webcal://www.calendarlabs.com/ical-calendar/ics/76/US_Holidays.ics"
-					}
-				]
-			}
-		},
-		{
 			module: "compliments",
-			position: "lower_third"
+			position: "lower_third",
+			config: {
+				remoteFile: "https://drive.google.com/uc?export=download&id=1gunukPrtbeGjOMYqDOJtaX7H2AUj3e3B"
+			}
 		},
 		/** WEATHER (YR, Holsts gate) */
 		{
@@ -77,7 +67,7 @@ let config = {
 		/** DEPARTURES (Entur, Biermanns gate) */
 		{
 			module: "MMM-Entur-tavle",
-			position: "top_right",
+			position: "top_left",
 			config: {
 				stopId: '11866',
 				stopType: 'Quay',
