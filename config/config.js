@@ -57,11 +57,11 @@ let config = {
 		},
 		/** WEATHER (YR, Holsts gate) */
 		{
-			module: 'MMM-YrNow',
+			module: 'MMM-YrThen',
 			position: 'top_right',
 			config: {
 				locationId: '10-996454',
-				showWeatherForecast: true
+				numDays: 2,
 			}
 		},
 		/** DEPARTURES (Entur, Biermanns gate) */
@@ -84,7 +84,7 @@ let config = {
 			module: "MMM-RemoteCompliments",
 			config: {
 				fadeSpeed: 1000,
-				
+
 			}
 		}
 	]
