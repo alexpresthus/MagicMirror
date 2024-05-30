@@ -66,6 +66,8 @@ npm i
 
 ## Start
 
+Need a news api key. Create a user and get the apikey from here: https://newsapi.org/
+
 ```
 export NEWS_API_KEY=<apikey> && npm run start
 ```
