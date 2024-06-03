@@ -60,7 +60,7 @@ To donate, please follow [this](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xcl
 git clone https://github.com/alexpresthus/MagicMirror.git
 cd MagicMirror/ && npm i
 npm run install-mm
-cd modules/ && git clone https://github.com/YR/MMM-YrNow.git && git clone https://github.com/mumblebaj/MMM-NewsAPI.git && git clone https://github.com/Arve/MMM-Entur-tavle.git
+cd modules/ && git clone https://github.com/fmandal/MMM-YrThen && git clone https://github.com/mumblebaj/MMM-NewsAPI.git && git clone https://github.com/Arve/MMM-Entur-tavle.git
 npm i
 ```
 

@@ -19,7 +19,7 @@ let config = {
 							// Default, when address config is left out or empty, is "localhost"
 	port: 8080,
 	basePath: "/",			// The URL path where MagicMirror² is hosted. If you are using a Reverse proxy
-					  		// you must set the sub path here. basePath must end with a /
+							// you must set the sub path here. basePath must end with a /
 	ipWhitelist: ["127.0.0.1", "::ffff:127.0.0.1", "::1"],	// Set [] to allow all IP addresses
 															// or add a specific IPv4 of 192.168.1.5 :
 															// ["127.0.0.1", "::ffff:127.0.0.1", "::1", "::ffff:192.168.1.5"],
@@ -30,8 +30,8 @@ let config = {
 	httpsPrivateKey: "", 	// HTTPS private key path, only require when useHttps is true
 	httpsCertificate: "", 	// HTTPS Certificate path, only require when useHttps is true
 
-	language: "en",
-	locale: "en-US",
+	language: "nb",
+	locale: "nb",
 	logLevel: ["INFO", "LOG", "WARN", "ERROR"], // Add "DEBUG" for even more logging
 	timeFormat: 24,
 	units: "metric",
@@ -50,45 +50,51 @@ let config = {
 		},
 		{
 			module: "compliments",
-			position: "lower_third",
+			position: "top_bar",
 			config: {
+				classes: "small bright",
 				remoteFile: "https://drive.google.com/uc?export=download&id=1gunukPrtbeGjOMYqDOJtaX7H2AUj3e3B"
 			}
 		},
+
 		/** WEATHER (YR, Holsts gate) */
 		{
-			module: 'MMM-YrThen',
-			position: 'top_right',
+			module: "MMM-YrThen",
+			position: "top_right",
 			config: {
-				locationId: '10-996454',
-				numDays: 2,
+				locationId: "10-996454",
+				numDays: 3,
+				numDetails: 3,
+				showAll: false,
 			}
 		},
+
 		/** DEPARTURES (Entur, Biermanns gate) */
 		{
 			module: "MMM-Entur-tavle",
 			position: "top_left",
 			config: {
-				stopId: '11866',
-				stopType: 'Quay',
+				stopId: "11866",
+				stopType: "Quay",
 				numResults: 5,
 				showHeader: true,
 				highlightRealtime: true,
-				timeOffset: [1, 'minutes'],
+				timeOffset: [1, "minutes"],
 				exclusions: [],
-				showTransportMode: true
+				showTransportMode: true,
+				size: "small"
 			}
 		},
+
 		/** REMOTE COMPLIMENTS FROM GOOGLE DRIVE */
 		{
 			module: "MMM-RemoteCompliments",
 			config: {
 				fadeSpeed: 1000,
-
 			}
 		}
 	]
 };
 
 /*************** DO NOT EDIT THE LINE BELOW ***************/
-if (typeof module !== "undefined") {module.exports = config;}
+if (typeof module !== "undefined") { module.exports = config; }
